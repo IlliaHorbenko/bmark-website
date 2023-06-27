@@ -170,10 +170,11 @@ ul {
 	margin-bottom: 130px;
 }
 
-.home__search {
+.search {
 	width: 1275px;
 	height: 273px;
 	border-radius: 20px;
-	background: #fff;
+	background-color: #fff;
 	box-shadow: 0px 4px 55px 0px rgba(0, 0, 0, 0.07);
+	display: grid;
 }
