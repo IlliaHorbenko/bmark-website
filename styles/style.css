@@ -80,6 +80,7 @@ h6 {
 	--primary: #13a6ba;
 	--accent-3: #772d8b;
 	--black-shade: #677071;
+	--black-shade-3: #e0e2e3;
 }
 
 * {
@@ -88,6 +89,7 @@ h6 {
 
 .section-one {
 	background-color: #fbedda;
+	margin-bottom: 150px;
 }
 
 .content {
@@ -139,6 +141,7 @@ ul {
 	padding: 10px 25px;
 	border-radius: 8px;
 	background-color: var(--primary);
+	border: 1px solid var(--primary);
 	transition: all 0.2s ease-in-out;
 }
 
@@ -176,5 +179,111 @@ ul {
 	border-radius: 20px;
 	background-color: #fff;
 	box-shadow: 0px 4px 55px 0px rgba(0, 0, 0, 0.07);
-	display: grid;
+	display: flex;
+	flex-direction: column;
+}
+
+.search__filter {
+	padding: 45px 55px 30px;
+	border-bottom: 1px solid var(--black-shade-3);
+}
+
+.filter {
+	color: var(--black-shade);
+	margin-right: 85px;
+	font-size: 1.625rem;
+	font-weight: 600;
+	background: none;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+}
+
+.filter:hover {
+	color: var(--black);
+	transition: all 0.2s ease-in-out;
+}
+
+#active {
+	color: var(--black);
+}
+
+#active::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background-color: var(--black);
+	bottom: -32px;
+	border-radius: 10px;
+}
+
+.search__parameters {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.search__filter-category {
+	margin: 33px 88px 33px 88px;
+	position: relative;
+}
+
+.search__filter-category:last-of-type {
+	margin-right: 67px;
+}
+
+.search__filter-category::after {
+	content: "";
+	position: absolute;
+	height: 50px;
+	width: 1px;
+	background-color: var(--black-shade-3);
+	right: -80px;
+	top: 10px;
+}
+
+.search__filter-category:last-of-type::after {
+	content: "";
+	position: absolute;
+	height: 0px;
+	width: 0px;
+	background-color: var(--black-shade-3);
+	right: -80px;
+	top: 10px;
+}
+
+.search__filter-name {
+	font-size: 1.125rem;
+	margin-bottom: 10px;
+	color: var(--black-shade);
+}
+
+.search__filter-name > svg {
+	position: absolute;
+	left: -35px;
+	top: -10px;
+}
+
+.search__filter-result {
+	font-size: 2.25rem;
+	font-weight: 600;
+	line-height: 50px;
+}
+
+.search__button {
+	color: #fff;
+	text-align: center;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 29px;
+	padding: 27px 55px;
+	border-radius: 20px;
+	background-color: var(--primary);
+	border: 1px solid var(--primary);
+	transition: all 0.2s ease-in-out;
+}
+
+.search__button:hover {
+	color: var(--primary);
+	background-color: #fff;
 }
