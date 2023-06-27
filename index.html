@@ -75,12 +75,12 @@
 					</h2>
 					<div class="search">
 						<div class="search__filter">
-							<a class="rent" href="#">Rent</a>
-							<a class="buy" href="#">Buy</a>
-							<a class="sell" href="#">Sell</a>
+							<button type="radio" id="active" class="filter rent">Rent</b>
+							<button type="radio" class="filter buy">Buy</button>
+							<button type="radio" class="filter sell">Sell</button>
 						</div>
 						<div class="search__parameters">
-							<div class="search__locations">
+							<div class="search__filter-category search__locations">
 								<p class="search__filter-name">
 									<svg
 										width="31"
@@ -98,7 +98,7 @@
 								</p>
 								<p class="search__filter-result">Los Angels</p>
 							</div>
-							<div class="search__type">
+							<div class="search__filter-category search__type">
 								<p class="search__filter-name">
 									<svg
 										width="31"
@@ -116,7 +116,7 @@
 								</p>
 								<p class="search__filter-result">Delux</p>
 							</div>
-							<div class="search__price">
+							<div class="search__filter-category search__price">
 								<p class="search__filter-name">
 									<svg
 										width="31"
@@ -137,13 +137,19 @@
 									Average Price
 								</p>
 								<p class="search__filter-result">$7000 - 8000</p>
+								
 							</div>
-							<a href="#" class="search">Search</a>
+							<button type="submit" class="search__button">
+								Search
+							</button>
 						</div>
 					</div>
 					<img src="images/home-art.png" width="1620px" alt="home-art" />
 				</div>
 			</div>
+		</section>
+		<section class="section-two">
+			
 		</section>
 	</body>
 </html>
