@@ -75,9 +75,27 @@
 					</h2>
 					<div class="search">
 						<div class="search__filter">
-							<button type="radio" id="active" class="filter rent">Rent</b>
-							<button type="radio" class="filter buy">Buy</button>
-							<button type="radio" class="filter sell">Sell</button>
+							<button
+								type="radio"
+								class="filter rent"
+								onclick="toggleFilter('rent')"
+							>
+								Rent
+							</button>
+							<button
+								type="radio"
+								class="filter buy"
+								onclick="toggleFilter('buy')"
+							>
+								Buy
+							</button>
+							<button
+								type="radio"
+								class="filter sell"
+								onclick="toggleFilter('sell')"
+							>
+								Sell
+							</button>
 						</div>
 						<div class="search__parameters">
 							<div class="search__filter-category search__locations">
@@ -137,7 +155,6 @@
 									Average Price
 								</p>
 								<p class="search__filter-result">$7000 - 8000</p>
-								
 							</div>
 							<button type="submit" class="search__button">
 								Search
@@ -148,8 +165,8 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-two">
-			
-		</section>
+		<section class="section-two"></section>
+
+		<script src="scripts/main.js"></script>
 	</body>
 </html>
