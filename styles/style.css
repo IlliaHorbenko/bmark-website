@@ -82,6 +82,7 @@ h6 {
 	--primary: #13a6ba;
 	--accent-3: #772d8b;
 	--black-shade: #677071;
+	--black-shade-2: #cccfd0;
 	--black-shade-3: #e0e2e3;
 	//radio-button
 	--form-control-color: #772d8b;
@@ -295,6 +296,7 @@ ul {
 .properties {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 6.25rem;
 }
 
 .title {
@@ -332,7 +334,89 @@ ul {
 	color: var(--accent-3);
 }
 
+.swiper-slide {
+	max-width: 32.5rem;
+	border-radius: 2.6rem;
+	transition: all 0.3s ease-in-out;
+}
+
 .swiper-slide__content {
 	padding: 2.5rem;
-	border-radius: 2.5rem;
+}
+
+.swiper-slide:hover {
+	transition: all 0.3s ease-in-out;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.photo-house {
+	max-width: 29.5rem;
+	border-radius: 1.5625rem 1.5625rem 0px 0px;
+	margin-bottom: 2.875rem;
+}
+
+.name-house {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 1.2rem;
+}
+
+.address-house {
+	font-size: 18px;
+	color: var(--black-shade);
+	margin-bottom: 2.5rem;
+}
+
+.price-house {
+	font-size: 58px;
+	font-weight: 700;
+	margin-bottom: 1.2rem;
+}
+
+.parameters {
+	color: var(--black-shade-2);
+	font-size: 18px;
+	display: flex;
+	position: relative;
+	margin-bottom: 3.4375rem;
+}
+
+.parameters__beds,
+.parameters__bath {
+	padding-right: 3.5rem;
+}
+
+.parameters__beds::before,
+.parameters__bath::before {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 18px;
+	background-color: var(--black-shade-2);
+}
+
+.parameters__beds::before {
+	left: 85px;
+}
+
+.parameters__bath::before {
+	left: 195px;
+}
+
+.details-house {
+	font-size: 28px;
+	font-weight: 600;
+	display: block;
+	text-align: center;
+	padding: 1.6875rem 0;
+	color: var(--primary);
+	border-radius: 1.25rem;
+	border: 1px solid var(--primary);
+	transition: all 0.3s ease-in-out;
+}
+
+.details-house:hover {
+	color: #fff;
+	background-color: var(--primary);
+	transition: all 0.3s ease-in-out;
 }
