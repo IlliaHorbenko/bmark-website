@@ -4,10 +4,13 @@ const swiper = new Swiper(".swiper", {
 	loop: true,
 	// Default parameters
 	slidesPerView: 3,
-	spaceBetween: 10,
+	spaceBetween: 20,
+	autoHeight: true,
+	speed: 800,
+	// autoplay: true,
 	// Navigation arrows
 	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
+		nextEl: ".s-button-next",
+		prevEl: ".s-button-prev",
 	},
 });

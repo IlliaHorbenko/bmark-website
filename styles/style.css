@@ -296,7 +296,7 @@ ul {
 .properties {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 6.25rem;
+	margin-bottom: 4.25rem;
 }
 
 .title {
@@ -334,10 +334,35 @@ ul {
 	color: var(--accent-3);
 }
 
+.swiper {
+	padding: 1.3rem !important;
+}
+
+.swiper-wrapper {
+	margin-bottom: 3.5rem;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
 .swiper-slide {
 	max-width: 32.5rem;
 	border-radius: 2.6rem;
 	transition: all 0.3s ease-in-out;
+	z-index: 1000;
+	visibility: visible;
+}
+
+.swiper-slide-prev {
+	visibility: visible;
+}
+
+.swiper-slide-next {
+	visibility: visible;
+}
+
+.swiper-slide-active {
+	visibility: visible;
 }
 
 .swiper-slide__content {
@@ -350,9 +375,11 @@ ul {
 }
 
 .photo-house {
-	max-width: 29.5rem;
 	border-radius: 1.5625rem 1.5625rem 0px 0px;
 	margin-bottom: 2.875rem;
+	object-fit: cover;
+	max-width: 27rem;
+	height: auto;
 }
 
 .name-house {
@@ -418,5 +445,31 @@ ul {
 .details-house:hover {
 	color: #fff;
 	background-color: var(--primary);
+	transition: all 0.3s ease-in-out;
+}
+
+.swiper-control {
+	display: flex;
+	justify-content: end;
+}
+
+.s-button-prev,
+.s-button-next {
+	cursor: pointer;
+	padding: 2rem 1.5rem;
+	border-radius: 0.5625rem;
+	transition: all 0.3s ease-in-out;
+	margin-left: 1rem;
+}
+
+.s-button-prev:hover,
+.s-button-next:hover {
+	background-color: var(--accent-3);
+	transition: all 0.3s ease-in-out;
+}
+
+.s-button-prev:hover path,
+.s-button-next:hover path {
+	stroke: #fff;
 	transition: all 0.3s ease-in-out;
 }
