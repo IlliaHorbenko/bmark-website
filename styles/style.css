@@ -293,6 +293,10 @@ ul {
 	background-color: #fff;
 }
 
+.section-two {
+	margin-bottom: 20rem;
+}
+
 .properties {
 	display: flex;
 	justify-content: space-between;
@@ -472,4 +476,15 @@ ul {
 .s-button-next:hover path {
 	stroke: #fff;
 	transition: all 0.3s ease-in-out;
+}
+
+.position-bubble {
+	position: relative;
+}
+
+.position-bubble__image {
+	position: absolute;
+	left: -4rem;
+	top: -20rem;
+	z-index: -1;
 }
