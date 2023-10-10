@@ -478,6 +478,10 @@ ul {
 	transition: all 0.3s ease-in-out;
 }
 
+.section-three {
+	margin-bottom: 20rem;
+}
+
 .position-bubble {
 	position: relative;
 }
@@ -523,4 +527,146 @@ ul {
 .properties__subtitle {
 	font-size: 20px;
 	color: var(--black-shade);
+}
+
+.section-four {
+	position: relative;
+}
+
+.vector-background {
+	position: absolute;
+	z-index: -1;
+	right: 20rem;
+	top: -10rem;
+}
+
+.social {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social__info {
+	max-width: 43.125rem;
+}
+
+.social__title {
+	font-size: 58px;
+	font-weight: 700;
+	line-height: 91px;
+	margin-bottom: 2rem;
+}
+
+.social__subtitle {
+	font-size: 20px;
+	color: var(--black-shade);
+	line-height: 38px;
+	margin-bottom: 4rem;
+}
+
+.social__statistic {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.statistic__number {
+	font-size: 42px;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.statistic__name {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: var(--black-shade);
+}
+
+.social__media {
+	position: relative;
+}
+
+.media__google-link {
+	position: absolute;
+	top: -19rem;
+	right: 7rem;
+	width: 9rem;
+	height: 9rem;
+	background-color: #fff;
+	border-radius: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	box-shadow: 0 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.176);
+	transition: all 0.3s ease-in-out;
+}
+
+.media__google-link:hover {
+	box-shadow: 0 2rem 6rem 0 rgba(0, 0, 0, 0.176);
+	transition: all 0.3s ease-in-out;
+}
+
+.media__post {
+	margin: 0 auto;
+	text-align: center;
+	max-width: 36.875rem;
+	background-color: #fff;
+	padding: 1rem;
+	border-radius: 2rem;
+	position: absolute;
+	right: 10rem;
+	top: -15rem;
+}
+
+.media__image {
+	margin-bottom: 2rem;
+}
+
+.media__text {
+	color: var(--black-shade);
+	font-size: 18px;
+	line-height: 1.5rem;
+}
+
+.media__account {
+	text-align: center;
+	width: 15rem;
+	border-radius: 1rem;
+	padding: 1.5rem;
+	background-color: #fff;
+	z-index: 1;
+	position: absolute;
+	right: 35rem;
+	bottom: -25rem;
+	box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+}
+
+.media__avatar {
+	border-radius: 50%;
+	background-color: #f3c98b;
+}
+
+.media__nickname {
+	font-size: 20px;
+	font-weight: 700;
+	margin: 0.5rem 0 1rem;
+}
+
+.media__statistic {
+	color: #fff;
+}
+
+.media__info {
+	margin: 0.5rem 0;
+	text-align: center;
+	padding: 1rem 0;
+	border-radius: 0.5rem;
+}
+
+.media__info:nth-child(1) {
+	background-color: var(--accent-3);
+}
+.media__info:nth-child(2) {
+	background-color: var(--primary);
 }
