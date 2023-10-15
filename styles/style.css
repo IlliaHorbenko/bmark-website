@@ -545,6 +545,7 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 }
 
 .social__info {
@@ -585,6 +586,19 @@ ul {
 
 .social__media {
 	position: relative;
+	transition: all 0.3s ease-in-out;
+}
+
+.social__media:hover .media__account {
+	transition: all 0.3s ease-in-out;
+	right: 42rem;
+	bottom: -30rem;
+}
+
+.social__media:hover .media__google-link {
+	top: -23rem;
+	right: 2rem;
+	transition: all 0.3s ease-in-out;
 }
 
 .media__google-link {
@@ -641,6 +655,7 @@ ul {
 	right: 35rem;
 	bottom: -25rem;
 	box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+	transition: all 0.3s ease-in-out;
 }
 
 .media__avatar {
@@ -744,6 +759,7 @@ ul {
 .testimonials__image {
 	position: absolute;
 	bottom: -0.1rem;
+	left: -7rem;
 }
 
 .section-six {
@@ -884,12 +900,12 @@ ul {
 
 .footer__social-link {
 	opacity: 0.5;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .footer__social-link:hover {
 	opacity: 1;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .footer__copyright {
