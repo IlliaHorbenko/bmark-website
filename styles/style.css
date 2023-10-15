@@ -98,8 +98,9 @@ h6 {
 }
 
 .content {
-	max-width: 1620px;
+	max-width: 101.25rem;
 	margin: 0 auto;
+	padding: 0 5px;
 }
 
 .header,
@@ -178,8 +179,13 @@ ul {
 	margin-bottom: 130px;
 }
 
+.home__art {
+	width: 100%;
+	object-fit: cover;
+}
+
 .search {
-	width: 1275px;
+	max-width: 1275px;
 	height: 273px;
 	border-radius: 20px;
 	background-color: #fff;
@@ -276,6 +282,7 @@ ul {
 }
 
 .search__button {
+	margin-right: 2rem;
 	color: #fff;
 	text-align: center;
 	font-size: 28px;
@@ -917,4 +924,119 @@ ul {
 
 .footer__copyright-title {
 	padding: 1.5rem 0;
+}
+
+@media (max-width: 1280px) {
+	.header {
+		margin-bottom: 100px;
+	}
+
+	.navigation__link {
+		margin-left: 50px;
+	}
+
+	.search {
+		height: 200px;
+	}
+	.search__filter-result {
+		font-size: 2rem;
+	}
+
+	.search__filter {
+		padding: 20px 55px 20px;
+	}
+
+	.search__filter-category {
+		margin: 20px -2px 21px 82px;
+	}
+	.search__filter-category:last-of-type {
+		margin-right: 35px;
+	}
+	.search__filter-category::after {
+		right: -30px;
+	}
+
+	.filter {
+		margin-right: 75px;
+		font-size: 1.3rem;
+	}
+
+	#active::before {
+		bottom: -21px;
+	}
+}
+
+@media (max-width: 1020px) {
+	.header {
+		padding: 25px 0;
+		margin-bottom: 65px;
+	}
+	.header ul {
+		font-size: 1.2rem;
+	}
+
+	.home__title {
+		line-height: 4rem;
+	}
+
+	.title {
+		font-size: 3.125rem;
+	}
+	.home__subtitle {
+		margin-bottom: 6.875rem;
+	}
+	.regestration {
+		margin-left: 40px;
+	}
+	.search {
+		height: 170px;
+	}
+
+	.search__filter-result {
+		font-size: 1.5rem;
+	}
+
+	.search__button {
+		font-size: 20px;
+		padding: 15px 25px;
+	}
+
+	.search__filter {
+		padding: 15px 20px 15px;
+	}
+
+	.search__filter-category {
+		margin: 25px 0 21px 50px;
+	}
+
+	.search__filter-category::after {
+		content: none;
+	}
+
+	#active::before {
+		bottom: -17px;
+	}
+
+	.search__filter-name {
+		font-size: 1rem;
+		margin-bottom: 0px;
+	}
+
+	.filter {
+		margin-right: 40px;
+		font-size: 1.2rem;
+	}
+
+	.navigation__link {
+		margin-left: 35px;
+	}
+}
+
+@media (max-width: 780px) {
+	.regestration {
+		padding: 5px 15px;
+	}
+}
+
+@media (max-width: 769px) {
 }
