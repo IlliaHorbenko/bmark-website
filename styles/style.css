@@ -1030,13 +1030,50 @@ ul {
 	.navigation__link {
 		margin-left: 35px;
 	}
-}
 
-@media (max-width: 780px) {
 	.regestration {
 		padding: 5px 15px;
 	}
+
+	.filter {
+		margin-right: 1.5625rem;
+	}
 }
 
-@media (max-width: 769px) {
+@media (max-width: 780px) {
+	.navigation__menu {
+		display: none;
+	}
+
+	.menu {
+		position: relative;
+		box-sizing: border-box;
+		margin-right: 1.6rem;
+	}
+
+	.menu::after,
+	.menu::before {
+		content: "";
+		position: absolute;
+	}
+
+	.menu,
+	.menu::after,
+	.menu::before {
+		height: 3px;
+		width: 30px;
+		border-radius: 9999px;
+		background-color: var(--primary);
+	}
+
+	.menu::after {
+		top: 10px;
+	}
+
+	.menu::before {
+		bottom: 10px;
+	}
+
+	.menu > .menu-active {
+	}
 }
