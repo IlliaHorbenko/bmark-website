@@ -12,4 +12,7 @@ function toggleFilter(filterType) {
 
 document.querySelector(".menu").addEventListener("click", function () {
 	document.querySelector(".menu").classList.toggle("menu-active");
+	document
+		.querySelector(".navigation__menu")
+		.classList.toggle("navigation-active");
 });
