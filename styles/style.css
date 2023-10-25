@@ -337,6 +337,10 @@ ul {
 	margin-left: 2.5rem;
 }
 
+.form-control:nth-child(1) {
+	margin-left: 0;
+}
+
 .form-control__button {
 	accent-color: var(--accent-3);
 }
@@ -1166,6 +1170,73 @@ ul {
 		display: block;
 		padding: 2rem 5rem;
 		font-size: 2.5rem;
+	}
+}
+
+@media (max-width: 771px) {
+	.selection {
+		margin-bottom: 2.25rem;
+	}
+	.swiper-wrapper {
+		margin-bottom: 2.5rem;
+	}
+
+	.form-control {
+		font-size: 23px;
+		margin-left: 1.5rem;
+	}
+
+	.form-control:nth-child(1) {
+		margin-left: 1rem;
+	}
+
+	.swiper-slide__content {
+		padding: 1rem;
+	}
+
+	.swiper-slide {
+		border-radius: 2rem;
+	}
+
+	.photo-house {
+		margin-bottom: 1.875rem;
+	}
+
+	.name-house {
+		font-size: 20px;
+		margin-bottom: 0.6rem;
+	}
+
+	.address-house {
+		font-size: 15px;
+		margin-bottom: 1.5rem;
+	}
+
+	.price-house {
+		font-size: 40px;
+	}
+
+	.parameters {
+		margin-bottom: 2.4375rem;
+		font-size: 15px;
+	}
+
+	.parameters__beds::before {
+		left: 61px;
+	}
+
+	.parameters__bath::before {
+		left: 140px;
+	}
+
+	.parameters__beds::before,
+	.parameters__bath::before {
+		height: 15px;
+	}
+
+	.details-house {
+		font-size: 20px;
+		padding: 1rem 0;
 	}
 }
 
