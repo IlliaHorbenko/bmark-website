@@ -517,10 +517,20 @@ ul {
 	align-items: center;
 }
 
+.house-properties-picture__image {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+}
+
 .house-properties__properties {
 	display: flex;
 	align-items: center;
 	margin-bottom: 4rem;
+}
+
+.house-properties__properties:last-child {
+	margin-bottom: 0;
 }
 
 .house-properties__title {
@@ -937,6 +947,22 @@ ul {
 	padding: 1.5rem 0;
 }
 
+@media (max-width: 1880px) {
+	.position-bubble__image {
+		left: 0%;
+	}
+}
+
+@media (max-width: 1590px) {
+	.house-properties__content {
+		margin-left: 2rem;
+	}
+	.house-properties__title {
+		font-size: 3.125rem;
+		line-height: 3.75rem;
+	}
+}
+
 @media (max-width: 1280px) {
 	.header {
 		margin-bottom: 100px;
@@ -998,7 +1024,33 @@ ul {
 	}
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
+	.house-properties-picture {
+		display: none;
+	}
+
+	.house-properties__content,
+	.house-properties__properties {
+		margin: 0 auto 3rem;
+	}
+
+	.house-properties__title {
+		margin: 0 auto 5rem;
+		text-align: center;
+	}
+
+	.properties__icon {
+		width: 10rem;
+		height: 10rem;
+	}
+
+	.properties__title {
+		font-size: 3rem;
+	}
+
+	.properties__subtitle {
+		font-size: 2rem;
+	}
 }
 
 @media (max-width: 1020px) {
@@ -1078,6 +1130,24 @@ ul {
 @media (max-width: 890px) {
 	.title {
 		font-size: 2.5rem;
+	}
+
+	.position-bubble__image {
+		width: 10rem;
+		top: -12rem;
+	}
+
+	.properties__icon {
+		width: 7rem;
+		height: 7rem;
+	}
+
+	.properties__title {
+		font-size: 2.5rem;
+	}
+
+	.properties__subtitle {
+		font-size: 1.5rem;
 	}
 }
 
@@ -1311,6 +1381,61 @@ ul {
 
 	.swiper-pagination {
 		display: block;
+	}
+
+	.house-properties__title {
+		font-size: 2.5rem;
+		line-height: 2.75rem;
+	}
+
+	.properties__title {
+		font-size: 2rem;
+	}
+
+	.properties__subtitle {
+		font-size: 1.3rem;
+	}
+
+	.properties__icon {
+		width: 5rem;
+		height: 5rem;
+	}
+}
+
+@media (max-width: 420px) {
+	.position-bubble__image {
+		width: 7rem;
+		top: -10rem;
+	}
+
+	.house-properties__title {
+		font-size: 2rem;
+		line-height: 1.75rem;
+	}
+
+	.properties__title {
+		font-size: 1.5rem;
+	}
+
+	.properties__subtitle {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 345px) {
+	.house-properties__title {
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+		margin-bottom: 3rem;
+	}
+
+	.properties__title {
+		font-size: 1.3rem;
+		margin-bottom: 0.3rem;
+	}
+
+	.properties__subtitle {
+		font-size: 1rem;
 	}
 }
 
