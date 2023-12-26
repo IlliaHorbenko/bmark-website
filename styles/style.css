@@ -77,22 +77,22 @@ h6 {
 /*--------------------*/
 
 :root {
-	//colors
+	/*colors*/
 	--black: #021112;
 	--primary: #13a6ba;
 	--accent-3: #772d8b;
 	--black-shade: #677071;
 	--black-shade-2: #cccfd0;
 	--black-shade-3: #e0e2e3;
-	//radio-button
+	/*radio-button*/
 	--form-control-color: #772d8b;
-	//pagination
+	/*pagination*/
 	--swiper-pagination-color: #772d8b;
 	--swiper-theme-color: #772d8b;
 }
 
 * {
-	font-family: "Noto Serif", serif;
+	font-family: 'Noto Serif', serif;
 }
 
 .section-one {
@@ -127,7 +127,7 @@ ul {
 }
 
 .navigation__link::before {
-	content: "";
+	content: '';
 	position: absolute;
 	width: 100%;
 	height: 3px;
@@ -222,7 +222,7 @@ ul {
 }
 
 #active::before {
-	content: "";
+	content: '';
 	position: absolute;
 	width: 100%;
 	height: 3px;
@@ -247,7 +247,7 @@ ul {
 }
 
 .search__filter-category::after {
-	content: "";
+	content: '';
 	position: absolute;
 	height: 50px;
 	width: 1px;
@@ -257,7 +257,7 @@ ul {
 }
 
 .search__filter-category:last-of-type::after {
-	content: "";
+	content: '';
 	position: absolute;
 	height: 0px;
 	width: 0px;
@@ -433,7 +433,7 @@ ul {
 
 .parameters__beds::before,
 .parameters__bath::before {
-	content: "";
+	content: '';
 	position: absolute;
 	width: 1px;
 	height: 18px;
@@ -904,7 +904,7 @@ ul {
 }
 
 .footer__links::before {
-	content: "";
+	content: '';
 	position: absolute;
 	width: 100%;
 	height: 2px;
@@ -1166,7 +1166,7 @@ ul {
 
 	.menu::after,
 	.menu::before {
-		content: "";
+		content: '';
 		position: absolute;
 		transition: all 0.1s ease-in-out;
 	}
