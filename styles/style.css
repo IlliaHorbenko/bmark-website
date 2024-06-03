@@ -963,6 +963,32 @@ ul {
 	}
 }
 
+@media (max-width: 1520px) {
+	.media__post {
+		right: 1rem;
+		max-width: 33.875rem;
+		position: static;
+	}
+	.media__account {
+		bottom: -10.5rem;
+		right: 17rem;
+	}
+	.media__google-link {
+		top: 25rem;
+		right: 6rem;
+	}
+	.social__media:hover .media__account {
+		right: 17.5rem;
+		bottom: -18.5rem;
+	}
+
+	.social__media:hover .media__google-link {
+		top: 35rem;
+		right: 1rem;
+		transition: all 0.3s ease-in-out;
+	}
+}
+
 @media (max-width: 1280px) {
 	.header {
 		margin-bottom: 100px;
@@ -1050,6 +1076,47 @@ ul {
 
 	.properties__subtitle {
 		font-size: 2rem;
+	}
+}
+
+@media (max-width: 1150px) {
+	.social {
+		flex-direction: column;
+	}
+	.social__info {
+		margin-right: 1rem;
+		margin-bottom: 3rem;
+	}
+
+	.media__post {
+		max-width: 50rem;
+	}
+
+	.media__image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.media__google-link {
+		top: 1rem;
+		right: 1rem;
+	}
+
+	.media__account {
+		bottom: 0rem;
+		right: 34rem;
+	}
+
+	.social__media:hover .media__account {
+		bottom: -16rem;
+		right: 43rem;
+	}
+
+	.social__media:hover .media__google-link {
+		top: -8rem;
+		right: -9rem;
+		transition: all 0.3s ease-in-out;
 	}
 }
 
@@ -1248,6 +1315,9 @@ ul {
 		padding: 2rem 5rem;
 		font-size: 2.5rem;
 	}
+}
+
+@media (max-width: 805px) {
 }
 
 @media (max-width: 771px) {
