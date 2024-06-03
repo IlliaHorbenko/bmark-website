@@ -21,7 +21,7 @@
 		<title>bmark</title>
 	</head>
 	<body>
-		<!-- <section class="section-one">
+		<section class="section-one">
 			<div class="content">
 				<header class="header">
 					<div class="logo">
@@ -488,7 +488,7 @@
 					</div>
 				</div>
 			</div>
-		</section> -->
+		</section>
 		<section class="section-four">
 			<div class="content">
 				<div class="social">
@@ -569,7 +569,7 @@
 				</div>
 			</div>
 		</section>
-		<!-- <section class="section-five">
+		<section class="section-five">
 			<div class="wrapper">
 				<div class="content">
 					<div class="testimonials">
@@ -620,6 +620,7 @@
 							</svg>
 							<svg
 								class="testimonials__decor2"
+								id="icon"
 								width="182"
 								height="142"
 								viewBox="0 0 182 142"
@@ -889,7 +890,21 @@
 					Copyright Abid Hasan Jilon 2021. All rights reserved
 				</h3>
 			</div>
-		</section> -->
+		</section>
+
+		<script>
+			window.addEventListener('resize', function () {
+				let icon = document.getElementById('icon')
+				let screenWidth = window.innerWidth
+				if (screenWidth <= 755) {
+					icon.setAttribute('width', '100')
+					icon.setAttribute('height', '100')
+				} else {
+					icon.setAttribute('width', '149')
+					icon.setAttribute('height', '169')
+				}
+			})
+		</script>
 
 		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 		<script src="scripts/main.js"></script>
